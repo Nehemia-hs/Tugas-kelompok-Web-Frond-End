@@ -1,16 +1,18 @@
-// Toggle classs active
-const navbarNav = document.querySelector('.navbar-nav');
+// Mengambil elemen menu navbar
+const navbarNav = document.querySelector(".navbar-nav");
 // ketika hamburger di click
-document.querySelector('#hamburger-menu').onclick = () => {
-    navbarNav.classList.toggle('active')
+// Menampilkan atau menyembunyikan menu saat tombol hamburger ditekan
+document.querySelector("#hamburger-menu").onclick = () => {
+    navbarNav.classList.toggle("active");
 };
 
-
 // Klik di luar sidebar untuk menghilangkan nav
-const hamburger = document.querySelector('#hamburger-menu');
+// Menyimpan elemen tombol hamburger
+const hamburger = document.querySelector("#hamburger-menu");
 
-document.addEventListener('click', function (e) {
+// Menutup menu navbar ketika pengguna mengklik area di luar hamburger dan navbar
+document.addEventListener("click", function (e) {
     if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
-        navbarNav.classList.remove('active');
+    navbarNav.classList.remove("active");
     }
 });
