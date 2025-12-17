@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- =================== BAGIAN HEAD =================== -->
+
 <head>
     <!-- Mengatur karakter dan tampilan responsif -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- Mengatur karakter, tampilan responsif, dan judul halaman -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Judul website -->
     <title>Kopi Kita</title>
 
     <!-- Menghubungkan font Poppins dari Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet" />
+
     <!-- Memuat Feather Icons (ikon berbasis JS) -->
     <script src="https://unpkg.com/feather-icons"></script>
 
     <!-- Menghubungkan file CSS utama -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-
     <!-- ===================== NAVBAR ===================== -->
     <!-- Bagian navigasi yang berisi logo dan menu utama -->
     <nav class="navbar">
@@ -45,8 +46,6 @@
     </nav>
     <!-- ===================== END NAVBAR ===================== -->
 
-
-
     <!-- ===================== HERO SECTION ===================== -->
     <!-- Bagian halaman pertama berisi judul besar dan tombol ajakan -->
     <section class="hero" id="home">
@@ -58,8 +57,6 @@
     </section>
     <!-- ===================== END HERO SECTION ===================== -->
 
-
-
     <!-- ===================== ABOUT SECTION ===================== -->
     <!-- Bagian yang menjelaskan tentang kedai kopi -->
     <section id="about" class="about">
@@ -68,7 +65,7 @@
         <div class="row">
             <!-- Gambar tentang kami -->
             <div class="about-img">
-                <img src="image/tentang kami.jpg" alt="Tentang Kami">
+                <img src="image/tentang kami.jpg" alt="Tentang Kami" />
             </div>
 
             <!-- Penjelasan tentang kopi -->
@@ -81,51 +78,47 @@
     </section>
     <!-- ===================== END ABOUT SECTION ===================== -->
 
-
-
     <!-- ===================== MENU SECTION ===================== -->
     <!-- Bagian daftar menu kopi yang tersedia -->
     <section id="Menu" class="menu">
         <h2><span>Menu</span> Kami</h2>
         <p>Beberapa pilihan kopi terbaik kami.</p>
-        
+
         <div class="row">
             <!-- Setiap menu ditampilkan sebagai card -->
             <div class="menu-card">
-                <img src="Image/menu/1.jpg" alt="Espresso">
+                <img src="Image/menu/1.jpg" alt="Espresso" />
                 <h3 class="menu-card-title">Espresso</h3>
                 <p class="menu-card-price">IDR 15.000</p>
             </div>
 
             <!-- Card menu lainnya (duplikasi untuk contoh) -->
             <div class="menu-card">
-                <img src="Image/menu/1.jpg" alt="Espresso">
+                <img src="Image/menu/1.jpg" alt="Espresso" />
                 <h3 class="menu-card-title">Espresso</h3>
                 <p class="menu-card-price">IDR 15.000</p>
             </div>
 
             <div class="menu-card">
-                <img src="Image/menu/1.jpg" alt="Espresso">
+                <img src="Image/menu/1.jpg" alt="Espresso" />
                 <h3 class="menu-card-title">Espresso</h3>
                 <p class="menu-card-price">IDR 15.000</p>
             </div>
 
             <div class="menu-card">
-                <img src="Image/menu/1.jpg" alt="Espresso">
+                <img src="Image/menu/1.jpg" alt="Espresso" />
                 <h3 class="menu-card-title">Espresso</h3>
                 <p class="menu-card-price">IDR 15.000</p>
             </div>
 
             <div class="menu-card">
-                <img src="Image/menu/1.jpg" alt="Espresso">
+                <img src="Image/menu/1.jpg" alt="Espresso" />
                 <h3 class="menu-card-title">Espresso</h3>
                 <p class="menu-card-price">IDR 15.000</p>
             </div>
         </div>
     </section>
     <!-- ===================== END MENU SECTION ===================== -->
-
-
 
     <!-- ===================== CONTACT SECTION ===================== -->
     <!-- Bagian untuk menampilkan lokasi dan form kontak -->
@@ -135,26 +128,24 @@
 
         <div class="row">
             <!-- Peta lokasi toko kopi -->
-            <iframe 
-                class="map"
-                src="https://www.google.com/maps/embed?...">
+            <iframe class="map" src="https://www.google.com/maps/embed?...">
             </iframe>
 
             <!-- Form input nama, email, dan nomor HP -->
             <form action="">
                 <div class="input-group">
                     <i data-feather="user"></i>
-                    <input type="text" placeholder="nama">
+                    <input type="text" placeholder="nama" />
                 </div>
 
                 <div class="input-group">
                     <i data-feather="mail"></i>
-                    <input type="text" placeholder="email">
+                    <input type="text" placeholder="email" />
                 </div>
 
                 <div class="input-group">
                     <i data-feather="phone"></i>
-                    <input type="text" placeholder="no hp">
+                    <input type="text" placeholder="no hp" />
                 </div>
 
                 <!-- Tombol kirim pesan -->
@@ -163,8 +154,6 @@
         </div>
     </section>
     <!-- ===================== END CONTACT SECTION ===================== -->
-
-
 
     <!-- ===================== FOOTER ===================== -->
     <!-- Bagian akhir website berisi sosial media, link, dan credit -->
@@ -188,8 +177,6 @@
     </footer>
     <!-- ===================== END FOOTER ===================== -->
 
-
-
     <!-- Mengaktifkan ikon Feather (mengubah tag <i> menjadi ikon SVG) -->
     <script>
         feather.replace();
@@ -197,6 +184,6 @@
 
     <!-- Menghubungkan file JavaScript untuk interaksi navbar -->
     <script src="js/script.js"></script>
-
 </body>
+
 </html>
