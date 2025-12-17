@@ -35,7 +35,7 @@ body {
     display: flex;                      /* elemen sejajar */
     justify-content: space-between;     /* jarak antar elemen */
     align-self: center;
-    padding: 1.4rem 7%;                 /* ruang dalam navbar */
+    padding: 1.2rem 7%;                 /* ruang dalam navbar */
     background-color: rgb(1, 1, 0.8);   /* warna navbar */
     border-bottom: 1px solid #513e2a;   /* garis bawah */
     position: fixed;                    /* selalu menempel di atas */
@@ -310,7 +310,7 @@ body {
 footer {
     background-color: var(--primary);
     text-align: center;
-    padding: 1rem 0 3rem;
+    padding: 1rem 0 2rem;
     margin-top: 3rem;
 }
 

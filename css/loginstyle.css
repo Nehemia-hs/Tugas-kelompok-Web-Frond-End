@@ -1,0 +1,120 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Ganti bg.jpg dengan URL gambar asli agar terlihat seperti contoh */
+    background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    width: 400px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(13px);
+    padding: 30px 35px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.content .input-box {
+    position: relative;
+    width: 100%;
+    height: 55px;
+    margin: 30px 0;
+}
+
+.content .input-box input {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 38px;
+    padding: 20px 45px 20px 20px;
+    font-size: 16px;
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.btnn {
+    display: inline-block;
+    background: #fff;
+    color: #0a2862;
+    width: 100%;
+    border-radius: 30px;
+    font-size: 16px;
+    height: 45px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.button a i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+/* Tambahkan ini di bagian bawah style.css jika diperlukan */
+.content {
+    margin: 20px 0; /* Memberi ruang jika layar kecil */
+    max-height: 95vh; /* Mencegah terpotong di layar pendek */
+    overflow-y: auto;
+}
+
+/* Menghilangkan scrollbar tapi fungsi scroll tetap ada */
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+.switch {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.switch a {
+    color: #00c3ff;
+    font-weight: 600;
+}
