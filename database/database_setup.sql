@@ -46,12 +46,3 @@ CREATE TABLE IF NOT EXISTS order_items (
     FOREIGN KEY (order_id) REFERENCES orders(id),
     FOREIGN KEY (product_id) REFERENCES products(id)
 );
-
--- Insert sample users
-INSERT INTO users (username, email, password) VALUES
-('admin', 'admin@kopikita.com', '$2y$10$fsJ.kt/UOMu5z6h6F6v/A.H23OCYwWpoOeK.4YH2tWJrlg72jfSPK');
-
--- INSERT INTO products (name, description, price, stock, image) VALUES
--- ('Espresso', 'Kopi hitam klasik', 15000, 50, 'Image/menu/2.avif'),
--- ('Latte', 'Kopi dengan susu', 20000, 30, 'Image/menu/2.avif'),
--- ('Cappuccino', 'Kopi dengan foam susu', 18000, 40, 'Image/menu/2.avif');
