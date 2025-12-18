@@ -18,9 +18,79 @@ body {
     align-items: center;
     justify-content: center;
     /* Ganti bg.jpg dengan URL gambar asli agar terlihat seperti contoh */
-    background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b'); 
+    background-image: url('../image/header1-bg.jpg'); 
     background-size: cover;
     background-position: center;
+}
+
+/* ================= NAVBAR ================= */
+
+/* Navbar fixed di atas layar */
+.navbar {
+    display: flex;                      /* elemen sejajar */
+    justify-content: space-between;     /* jarak antar elemen */
+    align-self: center;
+    padding: 1.2rem 7%;                 /* ruang dalam navbar */
+    background-color: rgb(1, 1, 0.8);   /* warna navbar */
+    border-bottom: 1px solid #513e2a;   /* garis bawah */
+    position: fixed;                    /* selalu menempel di atas */
+    top: 0; left: 0; right: 0;
+    z-index: 9999;                      /* supaya selalu di depan */
+}
+
+/* Logo navbar */
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic;
+}
+
+/* Warna khusus pada span logo */
+.navbar .navbar-logo span {
+    color: var(--primary);
+}
+
+/* Style link navbar */
+.navbar .navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
+
+/* Warna berubah saat hover */
+.navbar .navbar-nav a:hover {
+    color: var(--primary);
+}
+
+/* Efek garis bawah animasi */
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);               /* awalnya garis tidak muncul */
+    transition: 0.2s linear;
+}
+
+/* Garis muncul saat hover */
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+/* Ikon tambahan seperti search/cart */
+.navbar .navbar-extra a{
+    color: #fff;
+    margin: 0 0.5rem;
+}
+.navbar .navbar-extra a:hover {
+    color: var(--primary);
+}
+
+/* Sembunyikan hamburger di layar besar */
+#hamburger-menu {
+    display: none;
 }
 
 .content {
