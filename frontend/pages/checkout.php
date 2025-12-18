@@ -22,7 +22,7 @@
         <?php
         session_start();
         if (!isset($_SESSION['user_id'])) {
-            echo "<p>Silakan login terlebih dahulu. <a href='../frontend/pages/login.php'>Login</a></p>";
+            echo "<p>Silakan login terlebih dahulu. <a href='/frontend/pages/login.php'>Login</a></p>";
             exit();
         }
 
