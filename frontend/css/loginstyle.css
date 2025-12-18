@@ -1,3 +1,8 @@
+:root { 
+    --primary: #b6895b;   /* warna utama */
+    --bg: #010101;        /* warna background utama */
+}
+
 /* Reset Dasar */
 * {
     margin: 0;
@@ -51,46 +56,15 @@ body {
     color: var(--primary);
 }
 
-/* Style link navbar */
-.navbar .navbar-nav a {
-    color: #fff;
+.navbar .navbar-kembali .btn-kembali {
+    margin-top: 1rem;
     display: inline-block;
-    font-size: 1.2rem;
-    margin: 0 1rem;
-}
-
-/* Warna berubah saat hover */
-.navbar .navbar-nav a:hover {
-    color: var(--primary);
-}
-
-/* Efek garis bawah animasi */
-.navbar .navbar-nav a::after {
-    content: '';
-    display: block;
-    padding-bottom: 0.5rem;
-    border-bottom: 0.1rem solid var(--primary);
-    transform: scaleX(0);               /* awalnya garis tidak muncul */
-    transition: 0.2s linear;
-}
-
-/* Garis muncul saat hover */
-.navbar .navbar-nav a:hover::after {
-    transform: scaleX(0.5);
-}
-
-/* Ikon tambahan seperti search/cart */
-.navbar .navbar-extra a{
+    padding: 0.5rem 2rem;
+    font-size: 1.4rem;
     color: #fff;
-    margin: 0 0.5rem;
-}
-.navbar .navbar-extra a:hover {
-    color: var(--primary);
-}
-
-/* Sembunyikan hamburger di layar besar */
-#hamburger-menu {
-    display: none;
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
 .content {

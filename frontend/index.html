@@ -35,13 +35,22 @@
             <a href="#about">Tentang Kami</a>
             <a href="#Menu">Menu</a>
             <a href="#contact">Kontak</a>
-            <a href="#" class="btn-login">Beli Sekarang</a>
         </div>
 
         <!-- Ikon tambahan: search, cart, dan hamburger menu -->
         <div class="navbar-extra">
+            <?php
+            session_start();
+            if (isset($_SESSION['username'])) {
+                echo '<span style="color: #fff; margin-right: 1rem;">Halo, ' . $_SESSION['username'] . '</span>';
+                echo '<a href="backend/logout.php">Logout</a>';
+            } else {
+                echo '<a href="pages/login.php" class="btn-login">Login</a>';
+            }
+            ?>
+            <a href="pages/products.php" id="products">Produk</a>
             <a href="#" id="search"><i data-feather="search"></i></a>
-            <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+            <a href="pages/cart.php" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
             <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
         </div>
     </nav>
@@ -180,6 +189,23 @@
 
     <!-- Menghubungkan file JavaScript untuk interaksi navbar -->
     <script src="js/script.js"></script>
+
+    <?php
+    session_start();
+    if (isset($_SESSION['is_admin']) && $_SESSION['is_admin']) {
+        echo '<div style="padding: 2rem; background-color: rgba(0,0,0,0.8); color: #fff; text-align: center;">';
+        echo '<h2>Tambah Produk Baru (Admin)</h2>';
+        echo '<form action="backend/add_product.php" method="POST" enctype="multipart/form-data" style="display: inline-block; text-align: left;">';
+        echo '<input type="text" name="name" placeholder="Nama Produk" required style="display: block; margin: 0.5rem 0; padding: 0.5rem; width: 300px;"><br>';
+        echo '<textarea name="description" placeholder="Deskripsi" style="display: block; margin: 0.5rem 0; padding: 0.5rem; width: 300px; height: 80px;"></textarea><br>';
+        echo '<input type="number" name="price" placeholder="Harga" step="0.01" required style="display: block; margin: 0.5rem 0; padding: 0.5rem; width: 300px;"><br>';
+        echo '<input type="number" name="stock" placeholder="Stock" required style="display: block; margin: 0.5rem 0; padding: 0.5rem; width: 300px;"><br>';
+        echo '<input type="file" name="image" accept="image/*" style="display: block; margin: 0.5rem 0;"><br>';
+        echo '<button type="submit" style="background-color: var(--primary); color: #fff; padding: 0.5rem 1rem; border: none; border-radius: 0.3rem; cursor: pointer;">Tambah Produk</button>';
+        echo '</form>';
+        echo '</div>';
+    }
+    ?>
 </body>
 
 </html>
