@@ -19,7 +19,7 @@
     </nav>
 
         <div class="container">
-        <h1>Daftar Pembelian Kopi</h1>
+        <h1>Daftar Menu Kopi</h1>
         <div class="products">
             <?php
             include '../../backend/config.php';
