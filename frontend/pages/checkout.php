@@ -43,7 +43,7 @@
             echo "<tr><td colspan='3'><strong>Total</strong></td><td><strong>Rp " . number_format($total, 0, ',', '.') . "</strong></td></tr>";
             echo "</table>";
             echo "<form action='../../backend/process_order.php' method='POST'>";
-            echo "<button type='submit'>Konfirmasi Pembelian</button>";
+            echo "<a href='order_success.php' style='background-color: #var ; margin-left: 1rem;'>bayar</a>";
             echo "</form>";
             echo "<a href='cart.php' style='background-color: #f44336; margin-left: 1rem;'>Batal</a>";
         } else {
